@@ -22,7 +22,7 @@ public abstract class Canard {
 	}
 	
 	public String nager() {
-		return "Tous les canards flottent, même les leurres";
+		return "Tous les canards flottent, même les leurres!";
 	}
 	
 	public abstract String afficher();
@@ -33,11 +33,11 @@ public abstract class Canard {
 	public String effectuerVol() {
 		return this.comportementVol.voler();
 	}
-	public void setComportementVol() {
-		//TODO
+	public void changerComportementVol(ComportementVol comportementVol) {
+		this.comportementVol = comportementVol;
 	}
-	public void setComportementCancan() {
-		//TODO
+	public void changerComportementCancan(ComportementCancan comportementCancan) {
+		this.comportementCancan = comportementCancan;
 	}
 	
 	

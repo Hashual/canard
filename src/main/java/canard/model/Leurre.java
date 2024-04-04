@@ -1,16 +1,16 @@
 package canard.model;
 
 import canard.model.cancan.CanardMuet;
-import canard.model.vol.VolerAvecDesAiles;
+import canard.model.vol.NePasVoler;
 
 public class Leurre extends Canard {
 	
 	public Leurre(String nom) {
-		super(nom, new VolerAvecDesAiles(),new CanardMuet());	}
+		super(nom, new NePasVoler(),new CanardMuet());	}
 
 	@Override
 	public String afficher() {
-		return ( this.getNom() + " Je suis un vrai Leurre");
+		return ("Je suis un leurre");
 	}
 
 }

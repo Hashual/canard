@@ -10,7 +10,7 @@ public class Colvert extends Canard {
 	@Override
 
 	public String afficher() {
-		return ( this.getNom() + " Je suis un vrai Colvert");
+		return ("Je suis un vrai colvert");
 	}
 
 }
