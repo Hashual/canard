@@ -1,16 +1,16 @@
 package canard.model;
 
 import canard.model.cancan.Coincoin;
-import canard.model.vol.VolerAvecDesAiles;
+import canard.model.vol.NePasVoler;
 
 public class CanardEnPlastique extends Canard {
 
 	public CanardEnPlastique(String nom) {
-		super(nom, new VolerAvecDesAiles(),new Coincoin());	}
+		super(nom, new NePasVoler(),new Coincoin());	}
 
 	@Override
 	public String afficher() {
-		return ( this.getNom() + " Je suis un cannard en plastique");
+		return ("Je suis un canard en plastique");
 	}
 
 }
